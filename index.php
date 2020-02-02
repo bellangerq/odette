@@ -1,17 +1,22 @@
 <html>
+
 <head><?php wp_head(); ?></head>
+
 <body>
-<h1>Odette</h1>
-<p>A minimal WordPress theme.</p>
-<?php
-if ( have_posts() ) {
-    while ( have_posts() ) {
-        the_post();
-        the_title( '<h2>', '</h2>' );
-        the_content();
-    }
-}
-wp_footer();
-?>
+    <?php get_header() ?>
+    <hr>
+    <?php
+        if ( have_posts() ) {
+
+            // Load posts loop.
+            while ( have_posts() ) {
+                the_post();
+                get_template_part( 'content', get_post_format() );
+            }
+        }
+    ?>
+    <hr>
+    <?php get_footer() ?>
 </body>
+
 </html>
