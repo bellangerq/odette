@@ -3,7 +3,7 @@
 
   <head><?php wp_head(); ?></head>
   <body>
-    <?php get_header(); ?>
+    <?php get_template_part('partials/header'); ?>
 
     <main id="main">
       <ul>
@@ -26,5 +26,7 @@
         <?php endwhile; ?>
       </ul>
     </main>
+
+    <?php get_template_part('partials/footer'); ?>
   </body>
 </html>
