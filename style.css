@@ -4,3 +4,6 @@ Author: Quentin Bellanger
 Description: Good boi.
 Version: 1.0
 */
+
+@import 'assets/css/reset.css';
+@import 'assets/css/header.css';
