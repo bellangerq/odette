@@ -1,0 +1,29 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    'header header main main main'
+    'header header main main main'
+    'header header main main main'
+    'header header main main main'
+    'footer footer main main main'
+  ;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: var(--site-width);
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+}
+
+.site-footer {
+  grid-area: footer;
+}

@@ -39,6 +39,7 @@ body {
 
 /* a elements get default styles */
 a {
+  color: inherit;
   text-decoration-skip-ink: auto;
 }
 

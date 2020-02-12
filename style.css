@@ -6,4 +6,5 @@ Version: 1.0
 */
 
 @import 'assets/css/reset.css';
-@import 'assets/css/header.css';
+@import 'assets/css/variables.css';
+@import 'assets/css/layout.css';
