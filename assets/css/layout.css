@@ -17,13 +17,18 @@ body {
 }
 
 .site-header {
+  position: fixed;
+  top: 0;
   grid-area: header;
 }
 
 .site-main {
   grid-area: main;
+  overflow: auto;
 }
 
 .site-footer {
+  position: fixed;
+  bottom: 0;
   grid-area: footer;
 }
