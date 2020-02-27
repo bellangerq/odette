@@ -3,32 +3,24 @@ body {
   color: var(--color-text);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
     'header header main main main'
-    'header header main main main'
-    'header header main main main'
-    'header header main main main'
-    'footer footer main main main'
+    '. . main main main'
+    'footer footer . . .'
   ;
   min-height: 100vh;
   margin: 0 auto;
   max-width: var(--site-width);
 }
 
+body > * {
+  padding: 1rem;
+}
+
 .site-header {
-  position: fixed;
-  top: 0;
   grid-area: header;
 }
 
 .site-main {
   grid-area: main;
-  overflow: auto;
-}
-
-.site-footer {
-  position: fixed;
-  bottom: 0;
-  grid-area: footer;
 }

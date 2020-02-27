@@ -5,6 +5,9 @@ Description: Good boi.
 Version: 1.0
 */
 
-@import 'assets/css/reset.css';
-@import 'assets/css/variables.css';
-@import 'assets/css/layout.css';
+@import 'assets/css/base/reset.css';
+@import 'assets/css/base/variables.css';
+@import 'assets/css/base/layout.css';
+
+@import 'assets/css/partials/header.css';
+@import 'assets/css/partials/footer.css';

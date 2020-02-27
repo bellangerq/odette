@@ -6,7 +6,7 @@
           the_post(); ?>
 
         <header>
-          <h2><?php echo get_the_title(); ?></h2>
+          <h1><?php echo get_the_title(); ?></h1>
           <span>
             <time><?php the_date() ?></time> by <?php the_author(); ?>
           </span>

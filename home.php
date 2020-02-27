@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+  <div class="intro">
+    <h1>Latest articles</h1>
+  </div>
+
   <ul>
     <?php
       while ( have_posts() ) :
