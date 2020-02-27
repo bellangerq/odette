@@ -1,3 +1,25 @@
 .site-header {
-  padding: 1rem;
+  padding: var(--spacing-m);
+}
+
+.site-title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+.site-description {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--spacing-m);
+}
+
+.menu-item a {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--spacing-l);
+  text-decoration: none;
+}
+
+.current_page_item a {
+  text-decoration: line-through;
 }

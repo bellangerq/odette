@@ -2,13 +2,13 @@
   <head><?php wp_head(); ?></head>
   <body>
     <header class="site-header">
-      <a href="#main">Skip to content</a>
-      <a href="<?php echo get_option('home'); ?>">
+      <a href="#main" class="sr-only">Skip to main content</a>
+      <a href="<?php echo get_option('home'); ?>" class="site-title">
         <?php bloginfo('name');?>
       </a>
-      <?php if ( bloginfo('description') ) { ?>
-        <p><?php bloginfo('description'); ?></p>
-      <?php } ?>
+
+      <p class="site-description"><?php echo get_bloginfo('description'); ?></p>
+
       <?php
       if ( has_nav_menu( 'header' ) ) {
         echo wp_nav_menu('header');
