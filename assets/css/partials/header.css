@@ -3,7 +3,7 @@
 }
 
 .site-title {
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   text-decoration: none;
 }
