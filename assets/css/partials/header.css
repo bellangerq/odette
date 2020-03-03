@@ -17,9 +17,4 @@
 .menu-item a {
   font-weight: var(--font-weight-bold);
   font-size: var(--spacing-l);
-  text-decoration: none;
-}
-
-.current_page_item a {
-  text-decoration: line-through;
 }

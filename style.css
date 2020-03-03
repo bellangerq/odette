@@ -6,6 +6,7 @@ Version: 1.0
 */
 
 @import 'assets/css/base/reset.css';
+@import 'assets/css/base/fonts.css';
 @import 'assets/css/base/variables.css';
 @import 'assets/css/base/helpers.css';
 @import 'assets/css/base/layout.css';
