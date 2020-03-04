@@ -1,0 +1,16 @@
+.article-header {
+  margin-bottom: var(--spacing-l);
+}
+
+.article-metadata {
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+}
+
+.article-content p {
+  font-family: var(--font-family-serif);
+}
+
+.article-content > * + * {
+  margin-top: var(--spacing-m);
+}

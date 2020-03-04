@@ -2,7 +2,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   display: grid;
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-family-sans-serif);
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
     'header header main main main'
