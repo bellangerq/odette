@@ -4,7 +4,10 @@
 
 .article-metadata {
   font-size: var(--font-size-s);
-  text-transform: uppercase;
+}
+
+.article-metadata::before {
+  content: '—';
 }
 
 .article-content p {
