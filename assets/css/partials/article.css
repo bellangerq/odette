@@ -10,10 +10,6 @@
   content: '—';
 }
 
-.article-content p {
-  font-family: var(--font-family-serif);
-}
-
 .article-content > * + * {
   margin-top: var(--spacing-m);
 }
