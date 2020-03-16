@@ -13,7 +13,11 @@
 
     <?php
     if (has_nav_menu('header')) {
-      echo wp_nav_menu('header');
+      echo wp_nav_menu([
+        'theme_location' => 'header',
+        'container' => false,
+        'depth' => 1
+      ]);
     } ?>
   </header>
   <main id="main" class="site-main">
