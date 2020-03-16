@@ -1,9 +1,9 @@
-.footer {
+.posts {
   padding: var(--spacing-l) var(--spacing-m);
 }
 
 @media (max-width: 600px) {
-  .footer {
+  .posts {
     padding: var(--spacing-m);
   }
 }

@@ -1,6 +1,6 @@
-<footer class="site-footer">
-  <?php echo bloginfo('name') ?>
-  <?php echo date('o') ?>
+<footer class="footer">
+  <?php bloginfo('name') ?>
+  <?php echo date('Y') ?>
 </footer>
 </body>
 

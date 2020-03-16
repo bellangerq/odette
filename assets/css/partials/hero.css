@@ -1,0 +1,18 @@
+.hero {
+  border-top: var(--spacing-s) solid white;
+  border-bottom: var(--spacing-s) solid white;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.hero-content {
+  margin: 0 auto;
+  max-width: var(--site-width);
+  padding: var(--spacing-xl) var(--spacing-m);
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: var(--spacing-l) var(--spacing-m);
+  }
+}

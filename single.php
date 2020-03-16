@@ -1,18 +1,18 @@
   <?php get_header(); ?>
 
-  <article class="site-article">
+  <article class="post">
     <?php
     while (have_posts()) :
       the_post(); ?>
 
-      <header class="article-header">
+      <header class="post-header">
         <h1><?php echo get_the_title() ?></h1>
-        <span class="article-metadata">
+        <span class="post-metadata">
           <time><?php the_date() ?></time> by <?php the_author(); ?>
         </span>
       </header>
 
-      <div class="article-content">
+      <div class="post-content">
         <?php the_content(); ?>
       </div>
 

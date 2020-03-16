@@ -8,14 +8,14 @@ function register_header_menu()
 // Add custom class to menu items
 function menu_class($classes)
 {
-  $classes[] = 'site-nav-item';
+  $classes[] = 'header-nav-item';
   return $classes;
 }
 
 // Add custom class to menu links
 function menu_link_class($attrs)
 {
-  $attrs['class'] = 'site-nav-item-link';
+  $attrs['class'] = 'header-nav-item-link';
   return $attrs;
 }
 

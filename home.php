@@ -1,24 +1,22 @@
 <?php get_header(); ?>
 
-<div class="intro">
-  <h1>Latest articles</h1>
-</div>
+<?php get_template_part('hero') ?>
 
-<ul>
-  <?php while (have_posts()) : the_post(); ?>
-    <li>
-      <article>
+<div class="posts">
+  <ul>
+    <?php while (have_posts()) : the_post(); ?>
+      <li>
         <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
         <span>
-          <time><?php the_date() ?></time> by <?php the_author(); ?>
+          <time><?php the_date() ?></time><span aria-hidden> • </span><?php the_author(); ?>
         </span>
         <?php if (has_excerpt()) : ?>
-          <p><?php echo get_the_excerpt(); ?></p>
+          <p><?php the_excerpt(); ?></p>
         <?php endif; ?>
-      </article>
-    </li>
-  <?php endwhile; ?>
-</ul>
+      </li>
+    <?php endwhile; ?>
+  </ul>
+</div>
 </main>
 
 <?php get_footer(); ?>
