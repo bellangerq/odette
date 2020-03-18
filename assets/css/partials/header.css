@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+.header-title:hover {
+  color: var(--color-main);
+}
+
 .header-nav {
   display: flex;
 }
@@ -22,6 +26,14 @@
 
 .header-nav-item {
   font-size: var(--font-size-m);
+}
+
+.header-nav-item-link {
+  text-decoration-color: var(--color-main);
+}
+
+.header-nav-item-link:hover {
+  color: var(--color-main);
 }
 
 @media (max-width: 600px) {

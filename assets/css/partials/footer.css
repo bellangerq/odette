@@ -1,4 +1,5 @@
 .footer {
+  font-size: var(--font-size-s);
   padding: var(--spacing-l) var(--spacing-m);
 }
 

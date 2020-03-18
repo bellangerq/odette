@@ -6,13 +6,15 @@
   <ul>
     <?php while (have_posts()) : the_post(); ?>
       <li>
-        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-        <span>
-          <time><?php the_date() ?></time><span aria-hidden> • </span><?php the_author(); ?>
-        </span>
-        <?php if (has_excerpt()) : ?>
-          <p><?php the_excerpt(); ?></p>
-        <?php endif; ?>
+        <a href="<?php the_permalink() ?>">
+          <h2><?php the_title() ?></h2>
+          <span>
+            <time><?php the_date() ?></time><span aria-hidden> • </span><?php the_author(); ?>
+          </span>
+          <?php if (has_excerpt()) : ?>
+            <p><?php the_excerpt(); ?></p>
+          <?php endif; ?>
+        </a>
       </li>
     <?php endwhile; ?>
   </ul>

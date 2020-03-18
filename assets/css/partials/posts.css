@@ -2,6 +2,40 @@
   padding: var(--spacing-l) var(--spacing-m);
 }
 
+.posts li a {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-text);
+  display: block;
+  padding: var(--spacing-m);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.posts li a h2 {
+  text-decoration: underline var(--color-main);
+}
+
+.posts li a > span {
+  font-size: var(--font-size-s);
+  font-style: italic;
+}
+
+.posts li a p {
+  margin-top: var(--spacing-s);
+}
+
+.posts li a:hover {
+  transform: translateY(calc(var(--spacing-xs) * -1));
+}
+
+.posts li a:hover h2 {
+  color: var(--color-main);
+}
+
+.posts li + li {
+  margin-top: var(--spacing-l);
+}
+
 @media (max-width: 600px) {
   .posts {
     padding: var(--spacing-m);

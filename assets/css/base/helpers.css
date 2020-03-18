@@ -8,3 +8,15 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid var(--color-main);
+  outline-offset: var(--spacing-s);
+}
+
+/* Selection styles */
+*::selection {
+  background: var(--color-background);
+  color: var(--color-main);
+}
