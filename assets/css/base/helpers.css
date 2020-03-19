@@ -20,3 +20,22 @@
   background: var(--color-background);
   color: var(--color-main);
 }
+
+/* Scrollbar styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-main) var(--color-black);
+}
+
+*::-webkit-scrollbar {
+  height: var(--spacing-s);
+  width: var(--spacing-s);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-main) ;
+}
