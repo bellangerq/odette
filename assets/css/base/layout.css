@@ -6,3 +6,13 @@ body {
   max-width: var(--site-width);
   min-height: 100vh;
 }
+
+main {
+  padding: var(--spacing-l) var(--spacing-m);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: var(--spacing-m);
+  }
+}

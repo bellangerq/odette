@@ -1,7 +1,3 @@
-.posts {
-  padding: var(--spacing-l) var(--spacing-m);
-}
-
 .posts li a {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid var(--color-text);
@@ -34,10 +30,4 @@
 
 .posts li + li {
   margin-top: var(--spacing-l);
-}
-
-@media (max-width: 600px) {
-  .posts {
-    padding: var(--spacing-m);
-  }
 }

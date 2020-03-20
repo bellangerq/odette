@@ -1,11 +1,10 @@
-.hero-content {
-  margin: 0 auto;
+.hero {
+  margin: var(--spacing-m) auto var(--spacing-xl) auto;
   max-width: var(--site-width);
-  padding: var(--spacing-xl) var(--spacing-m);
 }
 
 @media (max-width: 600px) {
-  .hero-content {
-    padding: var(--spacing-l) var(--spacing-m);
+  .hero {
+    margin: 0 auto var(--spacing-xl) auto;
   }
 }
