@@ -19,6 +19,9 @@
     <?php endwhile; ?>
   </ul>
 </div>
+
+<?php pagination() ?>
+
 </main>
 
 <?php get_footer(); ?>

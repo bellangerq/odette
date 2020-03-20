@@ -19,6 +19,25 @@ function menu_link_class($attrs)
   return $attrs;
 }
 
+// Custom pagination structure
+function pagination () {
+  $pages = paginate_links(['type' => 'array']);
+  if ($pages === null) {
+      return;
+  }
+  echo '<nav aria-label="Pagination">';
+  echo '<ul class="pagination">';
+  foreach($pages as $page) {
+      $active = strpos($page, 'current') !== false;
+      $class = 'pagination-item';
+      echo '<li class="' . $class . '">';
+      echo str_replace('page-numbers', 'pagination-link', $page);
+      echo '</li>';
+  }
+  echo '</ul>';
+  echo '</nav>';
+}
+
 // Load styles without altering admin area
 function theme_styles()
 {
