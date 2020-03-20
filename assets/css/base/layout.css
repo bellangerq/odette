@@ -5,6 +5,7 @@ body {
   margin: 0 auto;
   max-width: var(--site-width);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 main {

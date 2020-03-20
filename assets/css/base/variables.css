@@ -1,7 +1,9 @@
 :root {
   --color-background: #222222;
+  --color-background-light: #393939;
   --color-text: #ffffff;
   --color-main: #f5a442;
+
   --site-width: 1000px;
 
   --font-family-sans-serif: 'Work Sans', sans-serif;
