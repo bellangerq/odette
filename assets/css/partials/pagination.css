@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--spacing-l);
+}
+
+.pagination-link {
+  padding: var(--spacing-s) var(--spacing-m);
+  text-decoration-color: var(--color-main);
+}
+
+@media (max-width: 600px) {
+  .pagination-link {
+    padding: var(--spacing-s);
+  }
+}

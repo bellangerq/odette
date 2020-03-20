@@ -15,5 +15,6 @@ Version: 1.0
 @import 'assets/css/partials/header.css';
 @import 'assets/css/partials/hero.css';
 @import 'assets/css/partials/posts.css';
+@import 'assets/css/partials/pagination.css';
 @import 'assets/css/partials/post.css';
 @import 'assets/css/partials/footer.css';
