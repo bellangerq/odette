@@ -50,6 +50,8 @@ function theme_styles()
   );
 }
 
+add_theme_support('title-tag');
+
 add_action('after_setup_theme', 'register_header_menu');
 add_action('wp_enqueue_scripts', 'theme_styles');
 

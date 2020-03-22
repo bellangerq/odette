@@ -9,7 +9,7 @@
         <a href="<?php the_permalink() ?>">
           <h2><?php the_title() ?></h2>
           <span>
-            <time><?php the_date() ?></time><span aria-hidden> • </span><?php the_author(); ?>
+            <time><?php the_date() ?></time><span aria-hidden="true"> • </span><?php the_author(); ?>
           </span>
           <?php if (has_excerpt()) : ?>
             <p><?php the_excerpt(); ?></p>
