@@ -10,6 +10,10 @@
   text-decoration-color: var(--color-main);
 }
 
+.pagination-link:not(span):hover {
+  color: var(--color-main);
+}
+
 @media (max-width: 600px) {
   .pagination-link {
     padding: var(--spacing-s);
