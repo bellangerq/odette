@@ -20,22 +20,35 @@ function menu_link_class($attrs)
 }
 
 // Custom pagination structure
-function pagination () {
+function pagination()
+{
   $pages = paginate_links(['type' => 'array']);
   if ($pages === null) {
-      return;
+    return;
   }
   echo '<nav aria-label="Pagination">';
   echo '<ul class="pagination">';
   foreach($pages as $page) {
-      $active = strpos($page, 'current') !== false;
-      $class = 'pagination-item';
-      echo '<li class="' . $class . '">';
-      echo str_replace('page-numbers', 'pagination-link', $page);
-      echo '</li>';
+    echo '<li class="pagination-item">';
+    echo str_replace('page-numbers', 'pagination-link', $page);
+    echo '</li>';
   }
   echo '</ul>';
   echo '</nav>';
+}
+
+// Custom tags structure
+function tags()
+{
+  $tags = get_the_tags();
+  if ($tags === null) {
+    return;
+  }
+  echo '<ul class="tags">';
+  foreach($tags as $tag) {
+    echo '<li class="tag"><a class="tag-link" href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li>';
+  };
+  echo '</ul>';
 }
 
 // Load styles without altering admin area

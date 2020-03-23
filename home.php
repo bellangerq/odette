@@ -15,6 +15,7 @@
             <p><?php the_excerpt(); ?></p>
           <?php endif; ?>
         </a>
+        <?php tags() ?>
       </li>
     <?php endwhile; ?>
   </ul>
