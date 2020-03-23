@@ -41,7 +41,7 @@ function pagination()
 function tags()
 {
   $tags = get_the_tags();
-  if ($tags === null) {
+  if (empty($tags)) {
     return;
   }
   echo '<ul class="tags">';
