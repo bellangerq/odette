@@ -1,4 +1,4 @@
-.posts li a {
+.post-link {
   background: var(--color-background-light);
   border: 1px solid var(--color-text);
   display: block;
@@ -7,27 +7,27 @@
   transition: transform 0.2s;
 }
 
-.posts li a h2 {
+.post-link h2 {
   text-decoration: underline var(--color-main);
 }
 
-.posts li a > span {
+.post-link > span {
   font-size: var(--font-size-s);
   font-style: italic;
 }
 
-.posts li a p {
+.post-link p {
   margin-top: var(--spacing-s);
 }
 
-.posts li a:hover {
+.post-link:hover {
   transform: translateY(calc(var(--spacing-xs) * -1));
 }
 
-.posts li a:hover h2 {
+.post-link:hover h2 {
   color: var(--color-main);
 }
 
-.posts li + li {
+.post + .post {
   margin-top: var(--spacing-l);
 }

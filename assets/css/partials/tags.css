@@ -1,0 +1,17 @@
+.tags {
+  font-size: var(--font-size-s);
+  margin: 0 calc(var(--spacing-s) * -1);
+}
+
+.tag {
+  display: inline-block;
+}
+
+.tag-link {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-s);
+}
+
+.tag-link:hover {
+  text-decoration: none;
+}

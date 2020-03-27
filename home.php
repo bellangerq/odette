@@ -5,8 +5,8 @@
 <div class="posts">
   <ul>
     <?php while (have_posts()) : the_post(); ?>
-      <li>
-        <a href="<?php the_permalink() ?>">
+      <li class="post">
+        <a class="post-link" href="<?php the_permalink() ?>">
           <h2><?php the_title() ?></h2>
           <span>
             <time><?php the_date() ?></time><span aria-hidden="true"> • </span><?php the_author(); ?>
